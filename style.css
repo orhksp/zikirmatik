@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(1.jpg);
+    background-position: top;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.counter-display {
+    font-size: 3em;
+    color: #333;
+}
+
+.buttons button {
+    width: 100px;
+    font-size: 1.5em;
+}
+
+#selected-dua {
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+    overflow: hidden; /* Hide overflow */
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-name {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.dua-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dua-list .list-group-item .btn-group {
+    display: flex;
+}

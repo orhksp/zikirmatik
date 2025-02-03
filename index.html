@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zikirmatik</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 style="color:aliceblue" class="text-center mb-4">Zikirmatik</h1>
+
+        <div id="user-info" class="d-none d-flex align-items-center">
+            <span id="user-name" class="mr-3 font-weight-bold"></span>
+            <button id="logout-btn" class="btn btn-outline-danger btn-sm">Çıkış</button>
+        </div>
+
+        <div id="auth-container" class="card p-4">
+            <div id="register-form" class="mb-4">
+                <h2 class="h4 mb-3">Register</h2>
+                <div class="form-group">
+                    <input type="text" id="firstName" class="form-control" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control" placeholder="Password">
+                </div>
+                <button id="register-btn" class="btn btn-primary btn-block">Register</button>
+            </div>
+            <div id="login-form">
+                <h2 class="h4 mb-3">Login</h2>
+                <div class="form-group">
+                    <input type="email" id="login-email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" class="form-control" placeholder="Password">
+                </div>
+                <button id="login-btn" class="btn btn-primary btn-block">Login</button>
+            </div>
+        </div>
+        <div id="zikirmatik-container" class="card p-4 mt-4" style="display: none;">
+            
+            <div class="dua">
+                <h2 class="h4 mb-3">Dua Seç</h2>
+                <div class="form-group">
+                    <select id="dua-select" class="form-control mb-3"></select>
+                </div>
+                <h2 class="h4 mb-3">Okunacak Dua</h2>
+                <div id="selected-dua" class="form-control mb-3" style="height: auto;"></div>
+                <h2 class="h4 mb-3">Dua ekle</h2>
+                <div class="form-group">
+                    <input type="text" id="dua-title" class="form-control" placeholder="Dua Başlığı">
+                </div>
+                <div class="form-group">
+                    <textarea id="new-dua" class="form-control" placeholder="New Dua"></textarea>
+                </div>
+                <button id="add-dua-btn" class="btn btn-primary btn-block">Add Dua</button>
+            </div>
+            <div class="counter-display text-center mb-4" id="counter">0</div>
+            <div class="buttons text-center mb-4">
+                <button id="reset-btn" class="btn btn-secondary mx-2">Reset</button>
+                <button id="decrement-btn" class="btn btn-danger mx-2">-</button>
+                <button id="increment-btn" class="btn btn-success mx-2">+</button>
+               
+               
+            </div>
+            <div class="dua-list mt-4">
+                <h2 class="h4 mb-3">Kaydedilen Dualar</h2>
+                <ul id="dua-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
